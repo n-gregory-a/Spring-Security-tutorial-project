@@ -22,10 +22,9 @@
         Role(s): <security:authentication property="principal.authorities" />
     </p>
 
-    <hr>
-
     <security:authorize access="hasRole('MANAGER')">
     <!-- Add link to point to /leaders ... this is for managers -->
+        <hr>
     <p>
         <a href="${pageContext.request.contextPath}/leaders">Leadership Meeting</a>
         (Only for Manager peeps)
@@ -34,6 +33,7 @@
 
     <security:authorize access="hasRole('ADMIN')">
     <!-- Add a link to point to /systems ... this is for the admins -->
+        <hr>
     <p>
         <a href="${pageContext.request.contextPath}/systems">IT Systems Meeting</a>
         (Only for Admin peeps)
