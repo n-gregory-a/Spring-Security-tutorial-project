@@ -10,4 +10,10 @@ public class DemoController {
     public String showHome() {
         return "home";
     }
+
+    // add request mapping ro /leaders
+    @GetMapping("/leaders")
+    public String showLeaders() {
+        return "leaders";
+    }
 }
