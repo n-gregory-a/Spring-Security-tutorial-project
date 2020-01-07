@@ -1,4 +1,5 @@
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 
 <html>
 
@@ -11,6 +12,15 @@
     <hr>
     <p>
         Welcome to the NGA Company Home Page!
+    </p>
+
+    <hr>
+    <!-- Display user name and role -->
+    <p>
+        User: <security:authentication property="principal.username" />
+        <br><br>
+        Role(s): <security:authentication property="principal.authorities" />
+        <hr>
     </p>
 
     <!-- Add a logout button -->
