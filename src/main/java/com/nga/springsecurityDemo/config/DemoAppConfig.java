@@ -79,9 +79,9 @@ public class DemoAppConfig {
         String propVal = environment.getProperty(propName);
 
         // converting to int
-        int intPropVal = Integer.parseInt(propVal);
+        assert propVal != null;
 
-        return intPropVal;
+        return Integer.parseInt(propVal);
     }
 
 }
