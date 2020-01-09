@@ -4,6 +4,6 @@ import com.nga.springsecurityDemo.entity.Role;
 
 public interface RoleDao {
 
-    Role findRoleBuName(String roleName);
+    Role findRoleByName(String roleName);
 
 }

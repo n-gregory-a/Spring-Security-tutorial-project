@@ -15,7 +15,7 @@ public class RoleDaoImpl implements RoleDao{
     private SessionFactory sessionFactory;
 
     @Override
-    public Role findRoleBuName(String roleName) {
+    public Role findRoleByName(String roleName) {
 
         //get the current hibernate session
         Session currentSession = sessionFactory.getCurrentSession();
