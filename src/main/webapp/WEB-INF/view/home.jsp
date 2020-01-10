@@ -20,6 +20,8 @@
         User: <security:authentication property="principal.username" />
         <br><br>
         Role(s): <security:authentication property="principal.authorities" />
+        <br><br>
+        First name: ${user.firstName}, Last name: ${user.lastName}, Email: ${user.email}
     </p>
 
     <security:authorize access="hasRole('MANAGER')">
